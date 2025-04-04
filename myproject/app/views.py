@@ -18,9 +18,16 @@ def about(request):
     return JsonResponse(data)
 
 
-def index(request):
-    return render(request, 'index.html')
+# def index(request):
+#     return render(request, 'index.html')
+
 
 def otherpage(request):
     return redirect('https://www.google.com')
 
+
+
+
+def index(request):
+    data=[{'name':'raj', 'city':'delhi'},{'name':'abhi', 'city':'bpl'}]
+    return render(request, 'index.html',{'key1':data})
