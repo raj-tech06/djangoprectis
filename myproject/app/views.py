@@ -11,6 +11,9 @@ def home(request):
     x="<h1>hello.... </h1>"
     return HttpResponse(x)
 
+def home(request):
+    x="<h1>hello.... </h1>"
+    return HttpResponse(x)
 
 
 def about(request):
